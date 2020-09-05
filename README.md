@@ -1,4 +1,4 @@
-# Galaxy League &ndash; Alpha 1.0.0
+# Flag-Ball &ndash; Alpha 1.0.0
 
 A tabletop game for three players.
 
