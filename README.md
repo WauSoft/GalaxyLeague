@@ -1,4 +1,4 @@
-# Galaxy League &ndash; Alpha 0.2.0
+# Galaxy League &ndash; Alpha 1.0.0
 
 A tabletop game for three players.
 
