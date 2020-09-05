@@ -5,13 +5,9 @@
 
 \pgfplotsset{width = \textwidth, compat=1.9}
 
-\title{Galaxy League $\alpha0.2.0$}
-\author{Marco L. L. Olsen\\ Nikolaj Lepka}
-\date{\copyright 2018, All Rights Reserved}
-
-%%%%
-% Macro definitions
-%%%%
+\title{Galaxy League $\alpha1.0.0$}
+\author{Alex Laterman\\ Marco L. L. Olsen\\ Nikolaj Lepka}
+\date{\copyright \the\year{}, All Rights Reserved}
 
 \newcommand{\note}[1]{\paragraph{Note} #1}
 \newcommand{\example}[1]{\paragraph{Example} #1}
@@ -26,17 +22,20 @@ Each player has a flag to protect, and a team of players.
 The game is played on a hex-grid, with three of the sides being the flag zone.
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{board-2}
+    \includegraphics[width=\textwidth]{graphics/board-2}
     \caption{The Playing Field}
     \label{fig:court}
 \end{figure}
-Depicted on Figure \ref{fig:court} is a mock-up of the playing field. The three coloured edges are the flag zones. The darker hexes in each flag zone, is where that team's flag is placed. 
+Depicted on Figure \ref{fig:court} is a mock-up of the playing field. 
+The three coloured edges are the flag zones.
+The darker hexes in each flag zone, is where that team's flag is placed. 
 The dark hex in the middle is where The Heavy is placed.
-The white lines mark the different teams' starting zones. The middle zone is a buffer zone where players can’t position their units at the start of the game.
+The white lines mark the different teams' starting zones.
+The middle zone is a buffer zone where players can’t position their units at the start of the game.
 
 \tableofcontents
-\input{game.tex}
-\input{teams.tex}
-\input{terminology.tex}
-\input{outcome-table.tex}
+\input{chapters/game.tex}
+\input{chapters/teams.tex}
+\input{chapters/terminology.tex}
+\input{chapters/outcome-table.tex}
 \end{document}
