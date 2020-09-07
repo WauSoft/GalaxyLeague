@@ -1,15 +1,17 @@
 \section{The Team} \label{the-team}
-Each team consists of 7 characters, each with five stats:
+Each team consists of 7 characters, each with four stats:
 
 \begin{description}
-    \item[Strength (Str)] Strength determines your attack power, and your ability to keep your balance if your attack fails.
-    \item[Dexterity (Dex)] Dexterity determines how well you throw and catch the flag.
-    \item[Throw (Thr)] Throw is your actual throwing distance.
-    It is $Dex/2$ by default.
-    \item[Agility (Agi)] Agility determines how well you dodge and run.
-    \item[Move (Mov)] Move is the actual running distance.
-    It is $Agi / 2$ by default.
+    \item[Fight (Fgt)] Fight determines your character's attack power, and determines how well they hold up in direct combat.
+    \item[Flight (Flt)] Flight determines how well your character dodges and runs.
+    \item[Throw (Thr)] Throw is your character's throwing distance.
+    \item[Move (Mov)] Move is your character's running distance.
 \end{description}
+
+\textit{Fight} and \textit{Flight} typically have values ranging between 1 and 6.
+
+\subsection{Special Abilities}
 Each character can also have zero or more special abilities.
 These abilities are additional modifiers that can change up how characters act.
 An example ability could be giving an attacking opponent a smaller chance of succeeding, or being able to leap great distances.
+These special abilities are often implemented using \textit{Source} (see Section~\ref{energy}).
