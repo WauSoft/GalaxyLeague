@@ -1,8 +1,17 @@
+\documentclass[a4paper]{book}
 \input{preamble.tex}
 
 \begin{document}
 
-\maketitle
+\begin{titlepage}
+\begin{center}
+    \huge{\textbf{FLAG-BALL}}\\
+    \LARGE{$\beta2.2.0$ --- By Niko Lepka}\\
+    \Large{\today}
+\end{center}
+\end{titlepage}
+\thispagestyle{empty} % removes page number from front page
+\frontmatter % adds Roman numerals to the preface chapter
 
 \section*{Premise}
 Flag-Ball is a rugby/capture-the-flag hybrid tabletop game for three players.
@@ -22,6 +31,7 @@ The white lines mark the different teams' starting zones.
 The middle zone is a buffer zone where players can’t position their units at the start of the game.
 
 \tableofcontents
+\mainmatter
 \input{chapters/game.tex}
 \input{chapters/teams.tex}
 \input{chapters/terminology.tex}
