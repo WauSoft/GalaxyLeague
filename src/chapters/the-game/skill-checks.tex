@@ -1,0 +1,72 @@
+\section{Skill Checks}\label{skill-checks}
+During the game, many physical altercations will need to be modelled.
+To achieve this, we use \textit{Skill Checks}; wherein you directly compare the physical characteristics---or \textit{skills}---of two or more characters.
+
+In checking skills, you will also have to roll for your player's \fate{}.
+This is done with a \textit{Fate Die}.
+The outcome of this die could either add or subtracts 1 from the player's skill.
+
+A player has three principle actions they can perform, which require skill checks: \textit{attacking}, \textit{tackling}, and \textit{dodging}.
+
+\subsection{Attacking (Fight vs. Flight)}
+When a player attacks another player, you compare the attacking player's \fight{} skill against the defending player's \flight{} skill, taking the relevant \fate{} rolls into account.
+
+\paragraph{Success}
+The opposing player gets knocked down, remaining in the hex where they stood.
+\paragraph{Failure}
+The defending coach moves the attacking player into an adjacent hex.
+\paragraph{Stalemate}
+Nothing happens.
+The players remain in their respective hexes.
+
+\subsection{Tackle (Fight vs. Fight)}
+When a player tackles another player, you compare their \fight{} skills, taking the relevant \fate{} rolls into account.
+
+\paragraph{Success} 
+The opposing player gets knocked down. 
+The attacking coach gets to move the downed player to an adjacent hex.
+The attacking player moves into the previously occupied hex.
+\paragraph{Failure}
+The attacking player gets knocked down where they stand.
+\paragraph{Stalemate}
+Nothing happens.
+The players remain in their respective hexes.
+
+\subsection{Dodging (Flight vs. Fight)}
+If your player wishes to pass through an opposing player's zone\footnote{workshop this name}, compare your player's \flight{} skill against their \fight{} skill, adjusted for \fate{}.
+
+\paragraph{Success}
+Your player remains unaffected and may continue moving.
+\paragraph{Failure}
+Your player gets knocked down where they entered the defender's zone.
+\paragraph{Stalemate}
+The player remains where they would have exited the defender's zone, and get to remain standing.
+
+\subsection{Holding the Flag}
+Holding the \flag{} increases the radius of a player's zone by one hex.
+It also prevents the player from being able to initiate tackles.
+
+In lieu of a traditional pass, your player may attempt to throw the flag at an opposing player as a ranged attack.
+You roll an \textit{Attack} as normal.
+If it fails, treat as a failed \throw{} instead (See Section~\ref{flag-interaction}).
+
+\subsection{Accounting for Multiple Players}
+If the zones of multiple players on the same team overlap in a way where they're all subject to the same skill checks, you may add the skills together and roll their total number of \fate{} dice.
+
+This applies to defending as well.
+
+\begin{example}
+    Two players from the \textit{Venzig Veterans} attack two players from the \textit{Kalmic Kalamities}.
+
+    The combined \fight{} skill of the two \textit{Venzig Veterans} players is 7 ($3 + 4$), and the combined \flight{} skill of the two \textit{Kalmic Kalamities} players is 9 ($4 + 5$).
+    
+    The coaches the teams each get one \fate{} die from each player in the scrimmage, with the \textit{Venzig Veterans} getting 0 (\texttt{+-}), and the \textit{Kalmic Kalamities} also getting 0 (\texttt{00}).
+
+    This was a huge risk for the \textit{Venzig Veterans} that ultimately didn't pay off, losing 7--9, unless their goal was simply to hold these players into an ongoing scrimmage.
+\end{example}
+
+% | Actor | Reactor | Outcome |
+% |-------+---------+---------|
+% | Fgt   | Fgt     | Grapple |
+% | Fgt   | Flt     | Dodge   |
+% | Flt   | Fgt     | Block   |
