@@ -8,8 +8,8 @@ The outcome of this die could either add or subtracts 1 from the player's skill.
 
 A player has three principle actions they can perform, which require skill checks: \textit{attacking}, \textit{tackling}, and \textit{dodging}.
 
-\subsection{Attacking (Fight vs. Flight)}
-When a player attacks another player, you compare the attacking player's \fight{} skill against the defending player's \flight{} skill, taking the relevant \fate{} rolls into account.
+\subsection{Harming (Fight vs. Flight)}
+When a player attempts to harm another player, you compare the attacking player's \fight{} skill against the defending player's \flight{} skill, taking the relevant \fate{} rolls into account.
 
 \paragraph{Success}
 The opposing player gets knocked down, remaining in the hex where they stood.
@@ -19,8 +19,8 @@ The defending coach moves the attacking player into an adjacent hex.
 Nothing happens.
 The players remain in their respective hexes.
 
-\subsection{Tackle (Fight vs. Fight)}
-When a player tackles another player, you compare their \fight{} skills, taking the relevant \fate{} rolls into account.
+\subsection{Shove (Fight vs. Fight)}
+When a player attempts to shove another player, you compare their \fight{} skills, taking the relevant \fate{} rolls into account.
 
 \paragraph{Success} 
 The opposing player gets knocked down. 
@@ -44,26 +44,34 @@ The player remains where they would have exited the defender's zone, and get to 
 
 \subsection{Holding the Flag}
 Holding the \flag{} increases the radius of a player's zone by one hex.
-It also prevents the player from being able to initiate tackles.
+It also prevents the player from being able to initiate shoves.
 
 In lieu of a traditional pass, your player may attempt to throw the flag at an opposing player as a ranged attack.
 You roll an \textit{Attack} as normal.
 If it fails, treat as a failed \throw{} instead (See Section~\ref{flag-interaction}).
 
 \subsection{Accounting for Multiple Players}
-If the zones of multiple players on the same team overlap in a way where they're all subject to the same skill checks, you may add the skills together and roll their total number of \fate{} dice.
+In the event of mutually overlapping player zones during an attack, the coaches may opt to have multiple players join in the dogpile.
+Players are only able to join the dogpile if an enemy in their zone is already in the dogpile.
+When doing this, you combine the relevant skill of all involved players and roll their combined total number of fate dice. 
+See Section~\ref{combat-step-by-step} for a breakdown.
 
-This applies to defending as well.
+\subsection{Combat Step-by-Step}\label{combat-step-by-step}
+Here is a simplified breakdown of combat.
+\begin{enumerate}
+    \item Attacker declares type of attack and target
+    \item Attacker declares helpers
+    \item Defender declares helpers
+    \item Harrier declares harrassers
+    \item Combat resolves en masse
+    \item Depending on outcome, the coaches may move players accordingly
+    \item If successful, attacker's helpers are free to act.
+\end{enumerate}
 
-\begin{example}
-    Two players from the \textit{Venzig Veterans} attack two players from the \textit{Kalmic Kalamities}.
-
-    The combined \fight{} skill of the two \textit{Venzig Veterans} players is 7 ($3 + 4$), and the combined \flight{} skill of the two \textit{Kalmic Kalamities} players is 9 ($4 + 5$).
-    
-    The coaches the teams each get one \fate{} die from each player in the scrimmage, with the \textit{Venzig Veterans} getting 0 (\texttt{+-}), and the \textit{Kalmic Kalamities} also getting 0 (\texttt{00}).
-
-    This was a huge risk for the \textit{Venzig Veterans} that ultimately didn't pay off, losing 7--9, unless their goal was simply to hold these players into an ongoing scrimmage.
-\end{example}
+\begin{note}
+Here, \textit{Harrier} refers to the coach that isn't either the attacker or defender. 
+The harrier can choose to act on either side of the conflict, or both of them at once as they see fit.
+\end{note}
 
 % | Actor | Reactor | Outcome |
 % |-------+---------+---------|

@@ -58,7 +58,7 @@ But you cannot Move -> Act -> Move
 
 Dodging does not count as an action, as long as they succeed.
 
-### Heavy always just ends the round
+### ~~Heavy always just ends the round~~
 
 Additionally, it is worth no points at all.
 
@@ -76,7 +76,7 @@ This is to facilitate helping as not being an action
 6. Depending on outcome, the coaches may move players accordingly
 7. If successful, attacker's helpers are free to act.
 
-### First Coach Disadvantage
+### ~~First Coach Disadvantage~~
 
 First coach's flag goes in the centre zone.
 

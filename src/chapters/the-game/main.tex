@@ -8,23 +8,23 @@ A game is broken down in the following way:
     % TODO: Find a way to possibly automate this
     \item The game starts with rock-paper-scissors, dice roll, or other means to determine who goes first.
     % TODO: introduce a play-book mechanic
-    \item Each player starts a Third by positioning their units on their side of the board.
-    Positioning units goes clockwise around the board, starting with the first player.
-    \item Once a player is done positioning their units, they may not try and reposition them in response to the placement of the other teams’ units.
-    \item A character can do one of five things on its turn:
+    \item Each coach starts a Third by positioning their players on their side of the board.
+    Coaches place all their players all at once, starting with the first coach.
+    \item The first coach in the turn order places their flag anywhere within the centre zone.
+    \item The other coaches roll 4dF+3, counting all non-\blank{} as \plus{}'s. The first coatch's flag is then moved that number of hexes within the centre zone.
+    It is up to the other coaches to decide amongst themselves who gets to do this.
+    \item The remaining coaches place their flag on the T in their Capture Zone.
+    \item Once a coach is done positioning their players, they may not try and reposition them in response to the placement of the other teams' players.
+    \item On their turn, a player may:
     \begin{enumerate}
         \item Do nothing.
         \item Move a number of hexes less than or equal to their move score.
-        \item Attack an opponent (see Section \ref{skill-checks}).
-        \item Throw or Pass a flag (see Section \ref{flag-interaction})
+        \item Harm, Shove, or Dodge an opponent (see Section \ref{skill-checks}).
         \item A special action, which may require Source (see Section \ref{energy}).
+        \item Pass \ball{} and/or throw a \flag{} (see Section \ref{flag-interaction})
     \end{enumerate}
-    \item A flag is picked up automatically upon touching, unless it’s either thrown at you or rolling towards you (see Section \ref{flag-interaction}).
-    \item Bringing a flag does not automatically end a Third unless either
-    \begin{enumerate}
-        \item All three flags are in the same capture zone
-        \item The Heavy is captured
-    \end{enumerate}
+    \item A \flag{} or \ball{} is picked up automatically upon touching, unless it’s either thrown at you or rolling towards you (see Section \ref{flag-interaction}).
+    \item A Third ends when \ball{} is captured.
 \end{enumerate}
 
 \input{chapters/the-game/the-team.tex}
