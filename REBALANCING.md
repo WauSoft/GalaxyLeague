@@ -125,7 +125,7 @@ Interception causes a scatter on a success, and flag catching by a friendly is a
 
 ## Player turn order
 
-1. **Should a player move its full turn to completion, or should it be possible to flip-flop between players, gradually bringing their turn to completion?** No flip-flops.
+1. **Should a player move its full turn to completion, or should it be possible to flip-flop between players, gradually bringing their turn to completion?** Yes flip-flops.
 
 Each option has drastic effects on how strategising works.
 
