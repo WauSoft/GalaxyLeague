@@ -147,3 +147,58 @@ This encourages the players to go for the opponent's flag faster and more import
 
 A suggested addendum to this was that each board half/third was a capture zone, instead of just the starting spot.
 So all you'd have to do would be to bring the flag into your team's side of the board to score.
+
+# Ideas for Specials and Star Players
+
+Balancing idea for star players: Health that limits the number of times they can be knocked down.
+
+## Rally 🌟
+
+Each friendly player within this player's reach or sharing a dogpile with this player gets +1 to Fgt.
+
+## Brave Sir Robert 🌟
+
+Rally but for Flt.
+
+## See Ya 🌟
+
+Move +3
+
+## Yeet🌟
+
+Throw +3
+
+## Inspire 🌟🌟
+
+Each friendly player within this player's reach or sharing a dogpile with this player gets +2 to all (Fgt, Flt, Mov, Thr) attributes.
+
+## Stand up and Fight 🌟🌟
+
+Grant +2 Fgt to a player within throwing distance.
+
+## Run Forest, Run! 🌟🌟
+
+Grant +2 Flt to a player within throwing distance.
+
+## Carthean Raging Bull 🌟🌟🌟
+
+If this player moves their full move distance before shoving, grant the player +5 Fgt.
+
+A successful shove pushes the affected players two hexes instead of the usual one.
+
+## Song of the Siren 🌟🌟🌟
+
+Grant one of the following bonuses to a player within throwing distance:
+
+- +3 Fgt
+- +3 Flt
+- +4 Mov
+- +4 Thr
+
+## THE POWER OF MEI COMPELS YOU 🌟🌟🌟🌟
+
+Take control of any opposing non-star player within throwing distance.
+
+## A Giant Leap for Birdkind 🌟🌟🌟🌟
+
+Throwing a flag causes this player to land with it.
