@@ -47,7 +47,7 @@ This needs to be simplified, so players aren't bogged down with this phase of th
 
 ### Order of actions matters
 
-As long as a character is 'producing a zone', they can aid. Unless that character failed an aid prior.
+As long as a player is 'producing a zone', they can aid. Unless that player failed an aid prior.
 
 The following are allowed
 
@@ -92,7 +92,7 @@ So if you've acted already you can't dodge at all
 ## Should there be a turn limit?
 
 1. **Should each Third be limited in terms of turns?
-   This would potentially incentivise faster play and dis-incentivise locking your opponent in a stalemate.** Not yet. If the game gets too unbalanced once hero characters are introduced, then we might consider it.
+   This would potentially incentivise faster play and dis-incentivise locking your opponent in a stalemate.** Not yet. If the game gets too unbalanced once hero players are introduced, then we might consider it.
 
 ## Flag Interception
 
