@@ -5,21 +5,6 @@
 \RequirePackage{epsdice}
 \RequirePackage{xparse}
 
-\def\diepattern@plus
-{%
-  \draw (0.5-0.25,0.5) -- (0.5+0.25,0.5);
-  \draw (0.5,0.5-0.25) -- (0.5,0.5+0.25);
-}
-
-\def\diepattern@minus
-{%
-  \draw (0.5-0.25,0.5) -- (0.5+0.25,0.5);
-}
-
-\def\diepattern@blank
-{%
-}
-
 \tikzstyle{die}=[fill=none]
 \tikzstyle{black die}=[fill=black, draw=white]
 
@@ -34,9 +19,11 @@
 \ExplSyntaxOn
 
 \prop_new:N \dice_pattern_names_prop
-\prop_put:Nnn \dice_pattern_names_prop + {plus}
-\prop_put:Nnn \dice_pattern_names_prop - {minus}
-\prop_put:Nnn \dice_pattern_names_prop \space {blank}
+
+\NewDocumentCommand\mapdiepattern{m O{#1}}
+{%
+  \prop_put:Nnn \dice_pattern_names_prop {#1} {#2}
+}
 
 \NewDocumentCommand\die{O{} m}
 {%
@@ -46,3 +33,19 @@
 }
 
 \ExplSyntaxOff
+
+\def\diepattern@blank{}
+\mapdiepattern{}[blank]
+
+\def\diepattern@plus
+{%
+  \draw (0.5-0.25,0.5) -- (0.5+0.25,0.5);
+  \draw (0.5,0.5-0.25) -- (0.5,0.5+0.25);
+}
+\mapdiepattern{+}[plus]
+
+\def\diepattern@minus
+{%
+  \draw (0.5-0.25,0.5) -- (0.5+0.25,0.5);
+}
+\mapdiepattern{-}[minus]
