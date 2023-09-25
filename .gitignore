@@ -5,4 +5,5 @@
 *.synctex.gz
 *.fdb_latexmk
 *.pdf
+!/src/graphics/*
 __latexindent_temp.tex
