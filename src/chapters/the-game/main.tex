@@ -1,31 +1,36 @@
 \chapter{The Game}
-\section{Basic Gameplay} \label{basic-gameplay}
-The objective of the game is to score the most points by capturing the opponents' flags while keeping your own safe.
-A game is broken down in the following way:
+\section{Setup}
 \begin{enumerate}
-    \item A game consists of three acts.
-    These work similar to half-times in most sports.
+    \item Each coach chooses their team of players.
+    \item Place the board on a suitable surface within reach of each of the coaches.
+    \item Place the ball in the centre of the field.
+    \item Place each team's flag on the T of each capture zone.
     % TODO: Find a way to possibly automate this
     \item The game starts with rock-paper-scissors, dice roll, or other means to determine who goes first, and play continues clockwise around the board.
     % TODO: introduce a play-book mechanic
     \item Each coach starts an Act by positioning their players on their side of the board.
     Coaches place all their players all at once, starting with the first coach.
-    \item The first coach in the turn order places their flag anywhere within the centre zone.
-    \item The other coaches roll $2dF+4$. The first coatch's flag is then moved that number of hexes within the centre zone.
-    It is up to the other coaches to decide amongst themselves who gets to do this.
-    \item The remaining coaches place their flag on the T in their Capture Zone.
-    \item Once a coach is done positioning their players, they may not try and reposition them in response to the placement of the other teams' players.
-    \item On their turn, a player may:
-    \begin{enumerate}
-        \item Do nothing.
-        \item Move a number of hexes less than or equal to their move score.
-        \item Harm, Shove, or Dodge an opponent (see \secref{skill-checks}).
-        \item A special action, which may require Source (see \secref{energy}).
-        \item Pass the ball and/or throw a flag (see \secref{flag-interaction})
-    \end{enumerate}
-    \item A flag or ball is picked up automatically upon touching, unless it’s either thrown at you or rolling towards you (see \secref{flag-interaction}).
-    \item An Act ends when the ball is captured.
 \end{enumerate}
+\section{Basic Gameplay} \label{basic-gameplay}
+The objective of the game is to score the most points by capturing the opponents' flags while keeping your own safe.
+A game consists of three acts. 
+At the end of the third act, whichever team has scored the most points is declared the winner.
+On their turn, a coach has five (5) Action Points (AP) to spend on moving their players around.
+These Action Points can be spent on any of the following:
+
+\begin{center}
+\begin{tabular}{ccc}
+    \textbf{Free Players} & \textbf{Blocked Players} & \textbf{Downed Players}\\
+    Move & Harm & Get up\\
+    Throw & Shove & \\
+    Catch & Dodge & 
+\end{tabular}
+\end{center}
+But more on those later.
+
+A flag or ball is picked up automatically upon touching, unless it's either thrown at you or rolling towards you (see \secref{flag-interaction}).
+
+An Act ends when the ball is captured.
 
 \input{chapters/the-game/the-team.tex}
 \input{chapters/the-game/skill-checks.tex}
