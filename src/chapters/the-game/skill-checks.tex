@@ -1,78 +1,109 @@
 \section{Actions \& Skill Checks}\label{skill-checks}
-During the game, many physical altercations will need to be modelled.
-To achieve this, we use \textit{Skill Checks}; wherein you directly compare the physical characteristics---or \textit{skills}---of two or more players.
+During the game, many different types of actions will need to be modelled.
+To achieve this, we use \textit{Skill Checks}.
 
-In checking skills, you will also have to roll for your player's \fate{}.
-This is done with a \textit{Fate Die}.
-The outcome of this die could either add or subtracts 1 from the player's skill.
+A player has four principle actions they can perform, which require skill checks: \textit{attacking}, \textit{catching}, \textit{sprinting}, and \textit{dodging}.
 
-A player has three principle actions they can perform, which require skill checks: \textit{attacking}, \textit{tackling}, and \textit{dodging}.
+\subsection{Skill Checks in General}
+To perform a skill check, you will have to either draw one or more random cards from your team's \destiny{} deck, or play a card from hand (see \textit{Cheating Destiny}).
+Then, the card's rank is compared with the relevant skill (\str{} or \agi{}), if the card's rank is greater than or equal to the skill's printed value, then the attempt was successful!
+If not, then it failed.
 
-\subsection{Harming (\fight{} vs. \flight{})}
-When a player attempts to harm another player, you compare the attacking player's \fight{} skill against the defending player's \flight{} skill, taking the relevant \fate{} rolls into account.
-
-\paragraph{Success}
-The opposing player gets knocked down, remaining in the hex where they stood.
-\paragraph{Failure}
-The defending coach moves the attacking player into an adjacent hex.
-\paragraph{Stalemate}
-Nothing happens.
-The players remain in their respective hexes.
-
-\subsection{Shove (\fight{} vs. \fight{})}
-When a player attempts to shove another player, you compare their \fight{} skills, taking the relevant \fate{} rolls into account.
-
-\paragraph{Success} 
-The opposing player gets knocked down. 
-The attacking coach gets to move the downed player to an adjacent hex.
-The attacking player moves into the previously occupied hex.
+If the value is an Ace, then the skill check results in a \textit{fumble}.
 
 \begin{note}
-In the event that multiple players are in a dogpile (see \secref{dogpiling}), all the participating players are elegible to move into the previously occupied hexes as the victor sees fit.
-\end{note}
-\paragraph{Failure}
-The attacking player gets knocked down where they stand.
-\paragraph{Stalemate}
-Nothing happens.
-The players remain in their respective hexes.
+    A card's rank is its printed value. Aces count as 1, Jacks 11, Queens, 12, and Kings are 13.
 
-\subsection{Dodging (\flight{} vs. \fight{})}
-If your player wishes to pass through an opposing player's reach (see \secref{moving}), compare your player's \flight{} skill against their \fight{} skill, adjusted for \fate{}.
+    A skill of ``7+'' has a 53.85\% chance of succeeding (not accounting for Jokers).
+\end{note}
+
+Only reshuffle the Destiny Deck once it runs out of cards.
+
+\subsubsection{Advantage and Disadvantage}
+Certain actions can or will be performed either at an advantage or at a disadvantage.
+
+\begin{itemize}
+    \item When performing an action at an advantage, draw two cards and choose the one that suits your current situation the best.
+    \item When performing an action at a disadvantage, likewise draw two cards, but always choose the lowest of the two.
+\end{itemize}
+
+\subsubsection{Jokers}
+Jokers count as automatic successes.
+Jokers come in two flavours: red and black.
+There is no mechanical difference between the two, other than the red one being treated as both a $\heartsuit$ and a $\diamondsuit$ for abilities that care about that, and the black one being likewise treated as both a $\spadesuit$ and a $\clubsuit$.
+
+\begin{note}
+    In terms of counting degrees of success, a Joker counts as infinite degrees.
+\end{note}
+
+\subsubsection{Cheating Destiny}
+During setup, each coach drew a hand of 6 cards.
+These cards are referred to as \textit{cheats} and can be used instead of drawing a card from the top of the deck. This is referred to as \textit{cheating destiny}.
+Beware: You only have six of these for the entire game, so use them wisely!
+
+\begin{note}
+    Cheats can only be used for one of the two cards when performing skills with advantage or with disadvantage, not both.
+\end{note}
+
+\subsection{Attacking (\strength{} vs. \strength{})}
+When a player attempts to attack another player, the attacking coach first draws a card for that player's \strength{} skill.
+Then, if successful, the other coach chooses if they wish to defend.
+
+If the defending player successfully defends, compare each sides' \textit{degrees of success} to determine who came out on top. Defender wins ties.
+
+\paragraph{Success}
+Depending on the type of card that was drawn in the attack, something different happens:
+\begin{itemize}
+    \item \textbf{Red Card:} The opposing player is pushed one hex away if possible. If not possible, treat the result as a black card.
+    \item \textbf{Black Card:} The opposing player gets knocked down, remaining in the hex where they stood.
+\end{itemize}
+\paragraph{Failure}
+The defending coach moves the attacking player into an adjacent hex.
+\paragraph{Fumble}
+The player who attempted the attack gets knocked down.
+
+\subsection{Defending (\strength{})}
+Special free action that only happens when a player is attacked.
+The defending player may choose to defend if the attacker's attack was successful. See \textit{Attacking} for details.
+
+\subsection{Dodging (\agility{} vs. \strength{})}
+If your player wishes to pass through an opposing player's reach (see \secref{moving}), perform a skill check against your player's \agility{} skill.
+If successful, the defending player gets to do a \strength{} check against it. Whichever side won by most degrees wins the check. Defender wins ties.
 
 \paragraph{Success}
 Your player remains unaffected and may continue moving.
 \paragraph{Failure}
+Your player stops their movement where they entered the defender's reach.
+\paragraph{Critical Failure}
 Your player gets knocked down where they entered the defender's reach.
-\paragraph{Stalemate}
-The player remains where they would have exited the defender's reach, and get to remain standing.
 
-\subsection{Snatching (\flight{} vs \flight{})}
+\subsection{Sprinting (\agility{})}
+To move beyond the regular move range, or move after a regular move action has been exhausted, a \agility{} check must be performed for each hex moved this way.
 \paragraph{Success}
-The player that was previously holding the flag or ball is knocked down.
-Your player now holds the flag or ball.
+The sprint was successful.
 \paragraph{Failure}
-Your player is knocked down.
-\paragraph{Stalemate}
-Both the attacking and defending players are knocked down.
-The flag or ball is scattered from the player who was originally holding it.
-In case of a hit, scatter again, or use the arrow on the hit icon if one is present.
+The player trips and falls without moving out of the hex they came from.
 
-\begin{note}
-In a dogpiling situation (see \secref{dogpiling}), only the attacking and defending players are knocked down, not any of the helpers or harrassers.
-\end{note}
+\subsection{Catching (\agility{} at disadv.)}\label{sec:catching}
+A player can attempt to catch a thrown flag as it passes within reach over them.
+\paragraph{Success}
+The flag is caught mid-air!
+\paragraph{Failure}
+The attempt at catching the flag mid-air failed, the flag continues as if nothing happened.
+\paragraph{Critical Failure}
+The player attempting to catch the flag is knocked down.
 
 \subsection{Holding the Flag}
 Holding the flag increases the radius of a player's reach by one hex.
-It also prevents the player from being able to initiate shoves.
 
 In lieu of a traditional pass, your player may attempt to throw the flag at an opposing player as a ranged attack.
 You roll an \textit{Attack} as normal.
 If it fails, treat as a failed \throw{} instead (See \secref{flag-interaction}).
 
 \subsection{Accounting for Multiple Players (Dogpiling)}\label{dogpiling}
-In the event of mutually overlapping player reaches during an attack, the coaches may opt to have multiple players join in the dogpile.
-Players are only able to join the dogpile if an enemy in their reach is already in the dogpile.
-When doing this, you combine the relevant skill of all involved players and roll their combined total number of fate dice. 
+If multiple player are within reach of an attack, and there are more attackers, the attack is at an advantage, if there are more defenders, the defense is at an advantage. If both sides are even in number, do the attack as normal.
+
+Any third party who isn't the target of an attack may choose to join either side of the conflict and add their numbers to the attacking or defending side.
 See \secref{combat-step-by-step} for a breakdown.
 
 \subsection{Combat Step-by-Step}\label{combat-step-by-step}
@@ -91,9 +122,3 @@ Here is a simplified breakdown of combat.
 Here, \textit{Harrier} refers to the coach that isn't either the attacker or defender. 
 The harrier can choose to act on either side of the conflict, or both of them at once as they see fit.
 \end{note}
-
-% | Actor | Reactor | Outcome |
-% |-------+---------+---------|
-% | Fgt   | Fgt     | Grapple |
-% | Fgt   | Flt     | Dodge   |
-% | Flt   | Fgt     | Block   |
